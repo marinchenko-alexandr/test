@@ -21,7 +21,7 @@ class TestAbs(unittest.TestCase):
         link_input_string = WebDriverWait(browser, 10).until(
             EC.presence_of_element_located((By.ID, "long_url_input"))
         )
-    # Вводим первоначальную ссылку дял сокращения
+    # Вводим первоначальную ссылку для сокращения
 
         link_input_string.send_keys('www.youtube.com/watch?v=YeIhVHKkoRc')
         link_shortening_button = WebDriverWait(browser, 10).until(
